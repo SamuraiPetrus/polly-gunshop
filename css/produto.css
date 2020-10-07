@@ -30,8 +30,30 @@
   font-weight: bolder;
 }
 
-.produto-shoparea{
+.produto-origem,
+.produto-shoparea,
+.produto-shoparea div{
   display: flex;
+}
+
+.produto-shoparea{
   flex-direction: column;
+}
+
+.produto-shoparea div,
+.produto-origem{
   align-items: center;
+}
+
+.produto-origem{
+  font-weight: bolder;
+}
+
+.produto-shoparea div{
+  justify-content: center;
+}
+
+.produto-shoparea input[type=number]{
+  width: 80px;
+  height: 40px;
 }

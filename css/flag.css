@@ -1,0 +1,7 @@
+.flag{
+  height: 30px;
+  width: 30px;
+  border: 2px solid lightgray;
+  overflow: hidden;
+  border-radius: 30px;
+}
