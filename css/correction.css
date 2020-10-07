@@ -1,0 +1,12 @@
+
+/* Correções do padrão css do Bulma, para melhorar a interface. */
+
+.navbar-item:hover,
+.navbar-item:focus,
+.navbar-link:hover{
+  color: #d392d8 !important;
+}
+
+.navbar-link:not(.is-arrowless)::after{
+  border-color: #d392d8 !important;
+}
