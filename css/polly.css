@@ -6,3 +6,13 @@
   width: 100px;
   margin-top: 4px;
 }
+
+.polly-msg{
+  font-weight: bolder;
+  width: 80px;
+  font-size: 13px;
+}
+
+.polly-container{
+  display: flex;
+}

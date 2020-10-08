@@ -1,0 +1,49 @@
+footer{
+  background: #5c88d6;
+}
+
+footer .container,
+footer .copyrights div{
+  display: flex;
+}
+
+footer .menu-label,
+footer .menu-list li a{
+  color: #fff;
+  font-size: 20px;
+}
+
+footer aside{
+  width: 25%;
+}
+
+footer .denuncia{
+  color: #a10000 !important;
+  font-weight: bolder;
+}
+
+footer .copyrights{
+  background: #3e63a3;
+  position: relative;
+}
+
+footer .copyrights div{
+  color: #fff;
+  justify-content: center;
+  font-style: italic;
+}
+
+footer .copyrights .creator{
+  font-weight: bolder;
+  color: lightgreen;
+}
+
+footer .copyrights .polly-container{
+  position: absolute;
+  top: -92px;
+  right: 0px;
+}
+
+footer .copyrights .polly-msg{
+  width: 130px;
+}
