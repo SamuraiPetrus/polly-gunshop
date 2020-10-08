@@ -3,213 +3,189 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="css/index.css">
         <title>Feirinha de armas da Polly</title>
     </head>
     <body>
         <div id="root">
-            <div class="main">
-                <header class="cabecalho">
-                    <div class="cabecalho-grid">
-                        <div>
-                          <h1 class="title is-1 mr-6">Feirinha de armas da Polly</h1>
-                          <p class="ml-1 cabecalho-slogan"><i>Matar pessoas nunca foi tão <strong>kawaii.</strong> &#10084;</i></p>
-                        </div>
-                        <img class="polly polly-intro" src="images/birthday-polly.svg" alt="Unicórnio Polly Feliz">
-                        <p class="polly-msg ml-5 mb-5"><strong>"Eu sou a Polly!"</strong></p>
-                    </div>
-                </header>
-                <div class="container">
-                    <nav class="navbar menu-principal">
-                        <div class="navbar-menu">
-                            <div class="navbar-start">
-                                <a href="#" class="navbar-item">Promoções</a>
-                                <a href="#" class="navbar-item">Sobre</a>
-                                <div class="navbar-item has-dropdown is-hoverable">
-                                    <a href="#" class="navbar-link">Carrinho</a>
-                                    <div class="carrinho navbar-dropdown">
-                                        <div class="carrinho-content">
-                                            <ul class="carrinho-items">
-                                                <li class="carrinho-item">
-                                                    <figure class="carrinho-thumb">
-                                                      <img src="images/thumbnails/uzi.webp" alt="">
-                                                    </figure>
-                                                    <a class="carrinho-title" href="#">SMG Uzi</a>
-                                                    <span class="preco">$55</span>
-                                                </li>
-                                            </ul>
-                                            <button class="button is-success is-light carrinho-checkout">Finalizar compra</button>
-                                        </div>
-                                    </div>
+            <cabecalho></cabecalho>
+            <div class="container">
+                <navigation>
+                    <navitem link="#">Promoções</navitem>
+                    <navitem link="#">Lançamentos</navitem>
+                    <dropdown title="Categorias">
+                          <dropitem link="#">Pistolas</dropitem>
+                          <dropitem link="#">Fuzis</dropitem>
+                          <dropitem link="#">Submetralhadoras</dropitem>
+                          <dropitem link="#">Armas brancas</dropitem>
+                    </dropdown>
+                    <dropdown title="Carrinho">
+                        <carrinho>
+                            <carrinho-item thumbnail="images/thumbnails/uzi.webp" preco="60">SMG Uzi</carrinho-item>
+                            <carrinho-item thumbnail="images/thumbnails/uzi.webp" preco="60">SMG Uzi</carrinho-item>
+                            <carrinho-item thumbnail="images/thumbnails/uzi.webp" preco="60">SMG Uzi</carrinho-item>
+                        </carrinho>
+                    </dropdown>
+                </navigation>
+                <section class="section">
+                    <titulo-da-sessao>Catálogo</titulo-da-sessao>
+                    <div class="catalogo">
+                        <div class="produto">
+                            <figure class="produto-figure">
+                                <img src="images/thumbnails/uzi.webp" class="produto-image" alt="">
+                            </figure>
+                            <div class="produto-info">
+                              <h3 class="produto-title mb-2">Uzi SMG</h3>
+                              <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
+                              <div class="produto-origem mb-3">
+                                  <img class="flag mr-2" src="images/flags/israel.svg" alt="Rússia">
+                                  ישראל
+                              </div>
+                              <div class="produto-shoparea">
+                                <div class="mb-3">
+                                  <input type="number" class="mr-4" min="1" max="100" value="1" />
+                                  <p class="preco">$155</p>
                                 </div>
-                            </div>
-                        </div>
-                    </nav>
-                    <section class="section">
-                        <div class="catalogo-header mb-6">
-                            <h2 class="title is-2 ml-3">Catálogo</h2>
-                            <div class="polly-container">
-                                <p class="polly-msg mb-6">"Rápido, antes que os tiras cheguem."</p>
-                                <img class="polly" src="images/badass-polly.svg" alt="" /><br>
+                                <button class="button is-success">Adicionar ao carrinho</button>
+                              </div>
                             </div>
                         </div>
-                        <div class="catalogo">
-                            <div class="produto">
-                                <figure class="produto-figure">
-                                    <img src="images/thumbnails/uzi.webp" class="produto-image" alt="">
-                                </figure>
-                                <div class="produto-info">
-                                  <h3 class="produto-title mb-2">Uzi SMG</h3>
-                                  <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
-                                  <div class="produto-origem mb-3">
-                                      <img class="flag mr-2" src="images/flags/israel.svg" alt="Rússia">
-                                      ישראל
-                                  </div>
-                                  <div class="produto-shoparea">
-                                    <div class="mb-3">
-                                      <input type="number" class="mr-4" min="1" max="100" value="1" />
-                                      <p class="preco">$155</p>
-                                    </div>
-                                    <button class="button is-success">Adicionar ao carrinho</button>
-                                  </div>
+                        <div class="produto">
+                            <figure class="produto-figure">
+                                <img src="images/thumbnails/colt.webp" class="produto-image" alt="">
+                            </figure>
+                            <div class="produto-info">
+                              <h3 class="produto-title mb-2">Lança Granadas USSR</h3>
+                              <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
+                              <div class="produto-origem mb-3">
+                                  <img class="flag mr-2" src="images/flags/russia.svg" alt="Rússia">
+                                  Россия
+                              </div>
+                              <div class="produto-shoparea">
+                                <div class="mb-3">
+                                  <input type="number" class="mr-4" min="1" max="100" value="1" />
+                                  <p class="preco">$155</p>
                                 </div>
-                            </div>
-                            <div class="produto">
-                                <figure class="produto-figure">
-                                    <img src="images/thumbnails/colt.webp" class="produto-image" alt="">
-                                </figure>
-                                <div class="produto-info">
-                                  <h3 class="produto-title mb-2">Lança Granadas USSR</h3>
-                                  <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
-                                  <div class="produto-origem mb-3">
-                                      <img class="flag mr-2" src="images/flags/russia.svg" alt="Rússia">
-                                      Россия
-                                  </div>
-                                  <div class="produto-shoparea">
-                                    <div class="mb-3">
-                                      <input type="number" class="mr-4" min="1" max="100" value="1" />
-                                      <p class="preco">$155</p>
-                                    </div>
-                                    <button class="button is-success">Adicionar ao carrinho</button>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="produto">
-                                <figure class="produto-figure">
-                                    <img src="images/thumbnails/famas.webp" class="produto-image" alt="">
-                                </figure>
-                                <div class="produto-info">
-                                  <h3 class="produto-title mb-2">Fuzil Tático FAMAS</h3>
-                                  <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
-                                  <div class="produto-origem mb-3">
-                                      <img class="flag mr-2" src="images/flags/france.svg" alt="Rússia">
-                                      France
-                                  </div>
-                                  <div class="produto-shoparea">
-                                    <div class="mb-3">
-                                      <input type="number" class="mr-4" min="1" max="100" value="1" />
-                                      <p class="preco">$155</p>
-                                    </div>
-                                    <button class="button is-success">Adicionar ao carrinho</button>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="produto">
-                                <figure class="produto-figure">
-                                    <img src="images/thumbnails/kit-rambo.png" class="produto-image" alt="">
-                                </figure>
-                                <div class="produto-info">
-                                  <h3 class="produto-title mb-2">Kit Rambo</h3>
-                                  <p class="produto-description mb-3">3 Pistolas .40, 1 Rifle de assalto (M16), 1 Rifle de precisão, 1 Espingarda (c/ Baioneta), uma Submetralhadora Alemã (MP40), 1 isqueiro e 1 cantil de água. </p>
-                                  <div class="produto-origem mb-3">
-                                      <img class="flag mr-2" src="images/flags/united-states-of-america.svg" alt="EUA">
-                                      United States
-                                  </div>
-                                  <div class="produto-shoparea">
-                                    <div class="mb-3">
-                                      <input type="number" class="mr-4" min="1" max="100" value="1" />
-                                      <p class="preco">$155</p>
-                                    </div>
-                                    <button class="button is-success">Adicionar ao carrinho</button>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="produto">
-                                <figure class="produto-figure">
-                                    <img src="images/thumbnails/38.png" class="produto-image" alt="">
-                                </figure>
-                                <div class="produto-info">
-                                  <h3 class="produto-title mb-2">Revólver calibre 38</h3>
-                                  <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
-                                  <div class="produto-origem mb-3">
-                                      <img class="flag mr-2" src="images/flags/brazil.svg" alt="Rússia">
-                                      Brasil
-                                  </div>
-                                  <div class="produto-shoparea">
-                                    <div class="mb-3">
-                                      <input type="number" class="mr-4" min="1" max="100" value="1" />
-                                      <p class="preco">$155</p>
-                                    </div>
-                                    <button class="button is-success">Adicionar ao carrinho</button>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="produto">
-                                <figure class="produto-figure">
-                                    <img src="images/thumbnails/bazooka.webp" class="produto-image" alt="">
-                                </figure>
-                                <div class="produto-info">
-                                  <h3 class="produto-title mb-2">Bazooka Nipônica</h3>
-                                  <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
-                                  <div class="produto-origem mb-3">
-                                      <img class="flag mr-2" src="images/flags/japan.svg" alt="Rússia">
-                                      日本
-                                  </div>
-                                  <div class="produto-shoparea">
-                                    <div class="mb-3">
-                                      <input type="number" class="mr-4" min="1" max="100" value="1" />
-                                      <p class="preco">$155</p>
-                                    </div>
-                                    <button class="button is-success">Adicionar ao carrinho</button>
-                                  </div>
-                                </div>
+                                <button class="button is-success">Adicionar ao carrinho</button>
+                              </div>
                             </div>
                         </div>
-                    </section>
-                  </div>
-                <footer>
-                    <div class="container section">
-                        <aside class="menu">
-                          <p class="menu-label">Loja virtual</p>
-                          <ul class="menu-list">
-                            <li> <a href="#">Promoções</a> </li>
-                            <li> <a href="#">Categorias</a> </li>
-                            <li> <a href="#">Sobre</a> </li>
-                          </ul>
-                        </aside>
-                        <aside class="menu">
-                          <p class="menu-label">Institucional</p>
-                          <ul class="menu-list">
-                            <li> <a href="#">Sobre a feirinha</a> </li>
-                            <li> <a href="#">Github</a> </li>
-                            <li> <a class="denuncia" href="#">Ligar para a polícia</a> </li>
-                          </ul>
-                        </aside>
-                    </div>
-                    <div class="copyrights">
-                        <div class="container pt-5 pb-5">
-                            © Vergonhosamente desenvolvido por: <a class="creator ml-2" href="https://github.com/SamuraiPetrus" target="_blank">SamuraiPetrus</a>
-                            <div class="polly-container">
-                                <p class="polly-msg mb-6">"A moralidade é uma mera ficção, por isso eu vendo armas."</p>
-                                <img class="polly" src="images/kisses-polly.svg" alt="" /><br>
+                        <div class="produto">
+                            <figure class="produto-figure">
+                                <img src="images/thumbnails/famas.webp" class="produto-image" alt="">
+                            </figure>
+                            <div class="produto-info">
+                              <h3 class="produto-title mb-2">Fuzil Tático FAMAS</h3>
+                              <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
+                              <div class="produto-origem mb-3">
+                                  <img class="flag mr-2" src="images/flags/france.svg" alt="Rússia">
+                                  France
+                              </div>
+                              <div class="produto-shoparea">
+                                <div class="mb-3">
+                                  <input type="number" class="mr-4" min="1" max="100" value="1" />
+                                  <p class="preco">$155</p>
+                                </div>
+                                <button class="button is-success">Adicionar ao carrinho</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <figure class="produto-figure">
+                                <img src="images/thumbnails/kit-rambo.png" class="produto-image" alt="">
+                            </figure>
+                            <div class="produto-info">
+                              <h3 class="produto-title mb-2">Kit Rambo</h3>
+                              <p class="produto-description mb-3">3 Pistolas .40, 1 Rifle de assalto (M16), 1 Rifle de precisão, 1 Espingarda (c/ Baioneta), uma Submetralhadora Alemã (MP40), 1 isqueiro e 1 cantil de água. </p>
+                              <div class="produto-origem mb-3">
+                                  <img class="flag mr-2" src="images/flags/united-states-of-america.svg" alt="EUA">
+                                  United States
+                              </div>
+                              <div class="produto-shoparea">
+                                <div class="mb-3">
+                                  <input type="number" class="mr-4" min="1" max="100" value="1" />
+                                  <p class="preco">$155</p>
+                                </div>
+                                <button class="button is-success">Adicionar ao carrinho</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <figure class="produto-figure">
+                                <img src="images/thumbnails/38.png" class="produto-image" alt="">
+                            </figure>
+                            <div class="produto-info">
+                              <h3 class="produto-title mb-2">Revólver calibre 38</h3>
+                              <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
+                              <div class="produto-origem mb-3">
+                                  <img class="flag mr-2" src="images/flags/brazil.svg" alt="Rússia">
+                                  Brasil
+                              </div>
+                              <div class="produto-shoparea">
+                                <div class="mb-3">
+                                  <input type="number" class="mr-4" min="1" max="100" value="1" />
+                                  <p class="preco">$155</p>
+                                </div>
+                                <button class="button is-success">Adicionar ao carrinho</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <figure class="produto-figure">
+                                <img src="images/thumbnails/bazooka.webp" class="produto-image" alt="">
+                            </figure>
+                            <div class="produto-info">
+                              <h3 class="produto-title mb-2">Bazooka Nipônica</h3>
+                              <!-- <p class="produto-description mb-3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</p> -->
+                              <div class="produto-origem mb-3">
+                                  <img class="flag mr-2" src="images/flags/japan.svg" alt="Rússia">
+                                  日本
+                              </div>
+                              <div class="produto-shoparea">
+                                <div class="mb-3">
+                                  <input type="number" class="mr-4" min="1" max="100" value="1" />
+                                  <p class="preco">$155</p>
+                                </div>
+                                <button class="button is-success">Adicionar ao carrinho</button>
+                              </div>
                             </div>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </section>
+              </div>
+            <footer>
+                <div class="container section">
+                    <aside class="menu">
+                      <p class="menu-label">Loja virtual</p>
+                      <ul class="menu-list">
+                        <li> <a href="#">Promoções</a> </li>
+                        <li> <a href="#">Categorias</a> </li>
+                        <li> <a href="#">Sobre</a> </li>
+                      </ul>
+                    </aside>
+                    <aside class="menu">
+                      <p class="menu-label">Institucional</p>
+                      <ul class="menu-list">
+                        <li> <a href="#">Sobre a feirinha</a> </li>
+                        <li> <a href="#">Github</a> </li>
+                        <li> <a class="denuncia" href="#">Ligar para a polícia</a> </li>
+                      </ul>
+                    </aside>
+                </div>
+                <div class="copyrights">
+                    <div class="container pt-5 pb-5">
+                        © Vergonhosamente desenvolvido por: <a class="creator ml-2" href="https://github.com/SamuraiPetrus" target="_blank">SamuraiPetrus</a>
+                        <div class="polly-container">
+                            <p class="polly-msg mb-6">"A moralidade é uma mera ficção, por isso eu vendo armas."</p>
+                            <img class="polly" src="images/kisses-polly.svg" alt="" /><br>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="loja.js"></script>
+        <script src="app/index.js" type="module"></script>
     </body>
 </html>
